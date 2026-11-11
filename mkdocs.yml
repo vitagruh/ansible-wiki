@@ -1,0 +1,92 @@
+site_name: Ansible в администрировании и кибербезопасности
+site_description: Практическая вики по внедрению Ansible в администрирование и кибербезопасность распределённой филиальной сети на VMware ESXi
+docs_dir: docs
+theme:
+  name: material
+  language: ru
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - content.code.copy
+    - search.highlight
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - toc:
+      permalink: true
+  - tables
+  - attr_list
+nav:
+  - Главная: index.md
+  - Старт:
+      - Маршруты чтения: start/reading-paths.md
+      - Быстрый старт: start/quickstart.md
+      - Глоссарий: start/glossary.md
+  - Основы:
+      - Основы Ansible: fundamentals/01-concepts.md
+      - Архитектура и компоненты: fundamentals/02-architecture.md
+      - Установка и версионирование: fundamentals/03-install.md
+      - Конфигурация: fundamentals/04-config.md
+      - Inventory: fundamentals/05-inventory.md
+      - Переменные: fundamentals/06-variables.md
+      - Playbooks и роли: fundamentals/07-playbooks-roles.md
+      - Шаблоны и lookup: fundamentals/08-templates-lookups.md
+      - Модули и FQCN: fundamentals/09-modules.md
+  - Безопасная разработка:
+      - Модель угроз: secure-dev/10-threat-model.md
+      - Секреты: secure-dev/11-secrets.md
+      - Доступ и привилегии: secure-dev/12-access.md
+      - Безопасный код: secure-dev/13-safe-code.md
+      - Секреты в CI/CD: secure-dev/14-cicd-secrets.md
+      - Цепочка поставок: secure-dev/15-supply-chain.md
+      - Аудит выполнения: secure-dev/16-audit-logging.md
+  - Администрирование:
+      - Филиалы: admin/20-branch-fleet.md
+      - Управление Linux: admin/21-os-management.md
+      - Дрейф конфигурации: admin/22-config-drift.md
+      - Файлы, ACL, SELinux: admin/23-files-acl-selinux.md
+      - VMware ESXi: admin/24-vmware-esxi.md
+      - Базовая сеть: admin/25-network-basics.md
+      - Сетевые устройства: admin/26-network-devices.md
+      - Облака: admin/27-cloud.md
+      - Kubernetes и контейнеры: admin/28-containers-k8s.md
+      - Резервное копирование и DR: admin/29-backup-dr.md
+      - Масштабирование: admin/30-scaling.md
+      - Миграция: admin/31-migration.md
+  - Безопасность:
+      - Харденинг Linux: security/35-linux-hardening.md
+      - SSH, PAM, sudo, MFA: security/36-auth-ssh-pam.md
+      - Межсетевой экран: security/37-firewall.md
+      - Ядро и аудит: security/38-kernel-audit.md
+      - TLS и PKI: security/39-tls-pki.md
+      - Харденинг VMware: security/40-vmware-hardening.md
+      - Сеть и облако: security/41-network-cloud-hardening.md
+      - Логирование: security/42-logging-monitoring.md
+      - Уязвимости и патчи: security/43-vuln-patching.md
+      - Комплаенс: security/44-compliance.md
+      - Реагирование на инциденты: security/45-incident-response.md
+      - Event-Driven Ansible: security/46-eda.md
+      - Zero trust и JIT: security/47-zero-trust.md
+      - Air-gapped среды: security/48-airgap.md
+  - Качество и процесс:
+      - Тестирование: quality/50-testing.md
+      - CI/CD и GitOps: quality/51-cicd-gitops.md
+      - Ревью и релизы: quality/52-review-release.md
+      - AAP, AWX, Semaphore: quality/53-aap-awx.md
+      - Governance: quality/54-governance.md
+      - Обучение и лаборатория: quality/55-training-lab.md
+  - Эксплуатация:
+      - Диагностика: ops/60-troubleshooting.md
+      - Чек-листы: ops/61-checklists.md
+      - Анти-паттерны: ops/62-antipatterns.md
+      - Дорожная карта: ops/63-roadmap.md
+      - FAQ: ops/64-faq.md
+      - Шпаргалки: ops/65-cheatsheet.md
+      - Источники: ops/66-sources.md
