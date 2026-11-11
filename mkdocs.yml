@@ -8,6 +8,19 @@ docs_dir: docs
 theme:
   name: material
   language: ru
+  palette:
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Переключить на светлую тему
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Переключить на тёмную тему
   features:
     - navigation.sections
     - navigation.indexes
