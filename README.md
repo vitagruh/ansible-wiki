@@ -4,6 +4,8 @@
 
 Материал охватывает путь от первого безопасного playbook до централизованной автоматизации, харденинга по CIS/STIG и автоматизации реагирования на инциденты. Только защитные практики: без оффенсивных техник, эксплуатации уязвимостей и обхода защиты.
 
+Опубликованная версия: https://vitagruh.github.io/ansible-wiki/
+
 ## Структура
 
 | Раздел | Содержание |
@@ -32,6 +34,10 @@ mkdocs serve
 ```bash
 mkdocs build --strict
 ```
+
+## Публикация
+
+Пуш в `main` запускает workflow `.github/workflows/pages.yml`: проверка страниц, строгая сборка и деплой на GitHub Pages. Сайт доступен по адресу https://vitagruh.github.io/ansible-wiki/, ручной запуск — через **Actions → Deploy wiki to GitHub Pages → Run workflow**.
 
 ## Проверка содержимого
 

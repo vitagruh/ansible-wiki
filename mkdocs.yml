@@ -1,5 +1,9 @@
 site_name: Ansible в администрировании и кибербезопасности
 site_description: Практическая вики по внедрению Ansible в администрирование и кибербезопасность распределённой филиальной сети на VMware ESXi
+site_url: https://vitagruh.github.io/ansible-wiki/
+repo_url: https://github.com/vitagruh/ansible-wiki
+repo_name: vitagruh/ansible-wiki
+edit_uri: edit/main/docs/
 docs_dir: docs
 theme:
   name: material
